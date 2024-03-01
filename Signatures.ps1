@@ -11,7 +11,7 @@ Write-Host @"
      ░░   ▒ ░   ░   ░ ░    ░     ░ ░   ░         ░  ░░ ░ ▒ ░  ░ ░     ░ ░    ▒ ░   ░   ░ ░ ░ ░   ░ 
       ░   ░           ░    ░  ░    ░  ░░ ░       ░  ░  ░ ░      ░  ░    ░  ░ ░           ░       ░ 
      ░                                 ░                                                           
-"@ -ForegroundColor Blue
+"@ -ForegroundColor Red
 
 Write-Host ""
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
